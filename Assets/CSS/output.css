@@ -10,6 +10,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -242,6 +244,9 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-fit {
+    height: fit-content;
+  }
   .h-px {
     height: 1px;
   }
@@ -284,6 +289,12 @@
   .justify-between {
     justify-content: space-between;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -320,6 +331,12 @@
   }
   .bg-\[\#A19C9C\] {
     background-color: #A19C9C;
+  }
+  .bg-\[\#E5E5E5\] {
+    background-color: #E5E5E5;
+  }
+  .bg-\[\#F8F8F8\] {
+    background-color: #F8F8F8;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -360,6 +377,10 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -383,6 +404,12 @@
   .text-\[\#907F73\] {
     color: #907F73;
   }
+  .text-\[\#555555\] {
+    color: #555555;
+  }
+  .text-\[\#888888\] {
+    color: #888888;
+  }
   .text-\[\#B7B5B3\] {
     color: #B7B5B3;
   }
@@ -397,6 +424,10 @@
   }
   .shadow-\[0px_0px_13px_-7px_black\] {
     --tw-shadow: 0px 0px 13px -7px var(--tw-shadow-color, black);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0px_\] {
+    --tw-shadow: 0px;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
@@ -487,6 +518,11 @@
       }
     }
   }
+  .max-lg\:flex-col {
+    @media (width < 64rem) {
+      flex-direction: column;
+    }
+  }
   .max-lg\:justify-between {
     @media (width < 64rem) {
       justify-content: space-between;
@@ -525,6 +561,12 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .md\:text-lg {
+    @media (width >= 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .md\:text-xl {
     @media (width >= 48rem) {
       font-size: var(--text-xl);
@@ -556,6 +598,21 @@
       width: calc(var(--spacing) * 20);
     }
   }
+  .lg\:w-\[30\%\] {
+    @media (width >= 64rem) {
+      width: 30%;
+    }
+  }
+  .lg\:w-\[30\] {
+    @media (width >= 64rem) {
+      width: 30;
+    }
+  }
+  .lg\:w-\[70\%\] {
+    @media (width >= 64rem) {
+      width: 70%;
+    }
+  }
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -564,6 +621,11 @@
   .lg\:justify-center {
     @media (width >= 64rem) {
       justify-content: center;
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
     }
   }
   .lg\:text-2xl {
@@ -588,6 +650,12 @@
     @media (width >= 64rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .lg\:text-xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .xl\:px-\[30px\] {
