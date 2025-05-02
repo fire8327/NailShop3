@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/CSS/output.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <main class="grid-container my-10 gap-y-20 grow">
+        <div class="flex flex-col gap-6 items-center justify-center">
+            <p class="text-2xl font-semibold tracking-widest">Регистрация</p>
+            <form class="flex flex-col gap-4 w-full md:w-1/2 xl:w-1/3">
+                <input required type="text" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Фамилия">
+                <input required type="text" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Имя">
+                <input required type="text" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Отчество">
+                <select required class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none">
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select>
+                <input required type="date" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Дата рождения">
+                <input required type="email" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Email">
+                <input required type="password" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Пароль">
+                <input required type="text" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Телефон">
+                <input required type="text" class="px-4 py-2 border border-[#A19C9C]/70 rounded-xl focus:outline-none" placeholder="Ваш город">
+                <button class="px-4 py-2 rounded-xl border text-white hover:text-[#A19C9C] border-[#A19C9C] bg-[#A19C9C] transition-all duration-500 hover:bg-transparent">Зарегистрироваться</button>
+            </form>
+            <div class="flex items-center justify-between gap-4 w-full md:w-1/2 xl:w-1/3">
+                <div class="w-1/3 h-px bg-[#A19C9C]/70"></div>
+                <p class="text-2xl">или</p>
+                <div class="w-1/3 h-px bg-[#A19C9C]/70"></div>
+            </div>
+            <a href="auth.html" class="text-center w-full md:w-1/2 xl:w-1/3 px-4 py-2 rounded-xl border hover:text-white text-[#A19C9C] border-[#A19C9C] hover:bg-[#A19C9C] transition-all duration-500 bg-transparent">Войти</a>
+        </div>
+    </main>
+    
+    <footer class="mt-auto flex flex-col gap-6 items-center w-full bg-[#A19C9C] py-6">
+        <a href="../index.html" class="font-bold text-2xl md:text-2xl lg:text-3xl transition-all duration-500 hover:-translate-y-1 text-center">Интернет-магазин NailMania</a>
+        <div class="flex items-center gap-4">
+            <a href="">
+                <img src="../Assets/Images/footer/telegram.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+            </a>
+            <a href="">
+                <img src="../Assets/Images/footer/whatsapp.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+            </a>
+            <a href="">
+                <img src="../Assets/Images/footer/instagram.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+            </a>
+        </div>
+    </footer>   
+</body>
+</html>
