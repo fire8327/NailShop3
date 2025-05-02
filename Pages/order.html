@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/CSS/output.css">
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <main class="grid-container my-10 gap-y-20 grow">
+        <div class="flex flex-col gap-6">
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold text-[#555555]">Оформление заказа</p>
+            <div class="flex max-lg:flex-col gap-8">
+                <div class="w-full lg:w-[70%] py-4 px-4 lg:px-8 rounded-xl bg-[#F8F8F8] shadow-[0px_0px_13px_-7px_black] h-fit">
+                    <div class="flex flex-col gap-6 w-full lg:w-4/5 xl:3/5">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs md:text-sm lg:text-base text-[#555555] font-semibold">Способ оплаты *</p>
+                            <select class="px-4 py-1.5 rounded-xl border border-[#CCCCCC]">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs md:text-sm lg:text-base text-[#555555] font-semibold">Город *</p>
+                            <select class="px-4 py-1.5 rounded-xl border border-[#CCCCCC]">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs md:text-sm lg:text-base text-[#555555] font-semibold">Информация о получателе *</p>
+                            <input placeholder="Имя" type="text" class="px-4 py-1.5 rounded-xl border border-[#CCCCCC]">
+                            <input placeholder="Фамилия" type="text" class="px-4 py-1.5 rounded-xl border border-[#CCCCCC]">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs md:text-sm lg:text-base text-[#555555] font-semibold">Телефон *</p>
+                            <input placeholder="+7 (___) ___-__-__" type="text" class="px-4 py-1.5 rounded-xl border border-[#CCCCCC]">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs md:text-sm lg:text-base text-[#555555] font-semibold">Почта</p>
+                            <input placeholder="Email" type="email" class="px-4 py-1.5 rounded-xl border border-[#CCCCCC]">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs md:text-sm lg:text-base text-[#555555] font-semibold">Комментарий</p>
+                            <textarea placeholder="Уточнения к заказу" class="px-4 py-1.5 rounded-xl border border-[#CCCCCC]"></textarea>
+                        </div>
+                        <button class="py-1.5 px-4 w-full xl:w-[70%] rounded-[20px] text-white border border-white bg-[#A19C9C] text-lg shadow-[0px_0px_13px_-7px_black]">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[30%] flex flex-col gap-6">
+                    <div class="flex flex-col gap-6 w-full py-4 px-4 lg:px-8 rounded-xl bg-[#F8F8F8] shadow-[0px_0px_13px_-7px_black] h-fit">
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#555555] font-semibold">Сумма заказа</p>
+                        <p class="text-xs lg:text-sm text-[#888888]">Стоимость заказа</p>
+                        <div class="w-full h-px bg-[#E5E5E5]"></div>
+                        <p class="self-end text-base md:text-lg lg:text-xl text-[#888888] font-semibold">850 ₸</p>
+                    </div>
+                    <div class="flex flex-col gap-6 w-full py-4 px-4 lg:px-8 rounded-xl bg-[#F8F8F8] shadow-[0px_0px_13px_-7px_black] h-fit">
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#555555] font-semibold">Доставка</p>
+                        <p class="text-xs lg:text-sm text-[#888888]">Стоимость доставки</p>
+                        <div class="w-full h-px bg-[#E5E5E5]"></div>
+                        <p class="self-end text-base md:text-lg lg:text-xl text-[#888888] font-semibold">1000 ₸</p>
+                    </div>
+                    <div class="flex flex-col gap-6 w-full py-4 px-4 lg:px-8 rounded-xl bg-[#F8F8F8] shadow-[0px_0px_13px_-7px_black] h-fit">
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#555555] font-semibold">Итого</p>
+                        <p class="text-xs lg:text-sm text-[#888888]">Общая сумма</p>
+                        <div class="w-full h-px bg-[#E5E5E5]"></div>
+                        <p class="self-end text-base md:text-lg lg:text-xl text-[#888888] font-semibold">1850 ₸</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="mt-auto flex flex-col gap-6 items-center w-full bg-[#A19C9C] py-6">
+        <a href="../index.html" class="font-bold text-2xl md:text-2xl lg:text-3xl transition-all duration-500 hover:-translate-y-1 text-center">Интернет-магазин NailMania</a>
+        <div class="flex items-center gap-4">
+            <a href="">
+                <img src="../Assets/Images/footer/telegram.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+            </a>
+            <a href="">
+                <img src="../Assets/Images/footer/whatsapp.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+            </a>
+            <a href="">
+                <img src="../Assets/Images/footer/instagram.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+            </a>
+        </div>
+    </footer>   
+</body>
+</html>
