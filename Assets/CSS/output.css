@@ -294,9 +294,6 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -367,6 +364,12 @@
   .border-\[\#E5E5E5\] {
     border-color: #E5E5E5;
   }
+  .border-\[\#F7BDF6\]\/70 {
+    border-color: color-mix(in oklab, #F7BDF6 70%, transparent);
+  }
+  .border-\[\#F242EE\]\/70 {
+    border-color: color-mix(in oklab, #F242EE 70%, transparent);
+  }
   .border-white {
     border-color: var(--color-white);
   }
@@ -384,6 +387,9 @@
   }
   .bg-\[\#F8F8F8\] {
     background-color: #F8F8F8;
+  }
+  .bg-\[\#F242EE\]\/70 {
+    background-color: color-mix(in oklab, #F242EE 70%, transparent);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -574,6 +580,13 @@
       }
     }
   }
+  .hover\:text-\[\#F242EE\]\/70 {
+    &:hover {
+      @media (hover: hover) {
+        color: color-mix(in oklab, #F242EE 70%, transparent);
+      }
+    }
+  }
   .hover\:text-white {
     &:hover {
       @media (hover: hover) {
@@ -757,19 +770,9 @@
       width: 30%;
     }
   }
-  .lg\:w-\[50\%\] {
-    @media (width >= 64rem) {
-      width: 50%;
-    }
-  }
   .lg\:w-\[70\%\] {
     @media (width >= 64rem) {
       width: 70%;
-    }
-  }
-  .lg\:w-\[70\] {
-    @media (width >= 64rem) {
-      width: 70;
     }
   }
   .lg\:w-\[500px\] {
@@ -889,26 +892,6 @@
   .container {
     max-width: var(--widthContent);
   }
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -1035,11 +1018,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
