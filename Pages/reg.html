@@ -7,6 +7,38 @@
     <title>Регистрация</title>
 </head>
 <body>
+    <header class="w-full flex flex-col gap-6 py-4 relative">
+        <div class="grid-container">
+            <div class="flex items-center justify-between lg:justify-center wrapper mx-auto w-full">
+                <a href="../index.html" class="text-[#B7B5B3] text-5xl md:text-6xl lg:text-7xl">NAIL SHOP</a>
+                <button id="toggler" class="lg:hidden">
+                    <img src="../Assets/Images/header/menu.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+                </button>
+            </div>
+        </div>
+        <div class="w-full h-px bg-[#736962] max-lg:hidden"></div>
+        <div class="grid-container">
+            <div id="menu" class="flex items-center z-[5] lg:justify-between wrapper mx-auto w-full max-lg:absolute max-lg:left-0 max-lg:w-full max-lg:top-0 max-lg:-translate-y-full max-lg:bg-white max-lg:py-8 transition-all duration-500 max-lg:flex-col max-lg:border-t border-[#736962]">
+                <div class="flex items-center gap-4 uppercase">
+                    <a href="catalog.html" class="flex flex-col after:w-0 after:h-px after:bg-black after:transition-all after:duration-500 hover:after:w-full">КАТАЛОГ</a>
+                    <a href="profile.html" class="flex flex-col after:w-0 after:h-px after:bg-black after:transition-all after:duration-500 hover:after:w-full">ЛИЧНЫЙ КАБИНЕТ</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="" class="transition-all duration-500 hover:opacity-60">
+                        <img src="../Assets/Images/header/search.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+                    </a>
+                    <a href="cart.html" class="transition-all duration-500 hover:opacity-60">
+                        <img src="../Assets/Images/header/cart.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+                    </a>
+                    <a href="favorite.html" class="transition-all duration-500 hover:opacity-60">
+                        <img src="../Assets/Images/header/favorite.svg" alt="" class="w-8 lg:w-10 h-8 lg:h-10">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="fixed bg-black/30 mt-32 inset-0 z-[4] hidden lg:hidden"></div>
+    </header>
+
     <main class="grid-container my-10 gap-y-20 grow">
         <div class="flex flex-col gap-6 items-center justify-center">
             <p class="text-2xl font-semibold tracking-widest">Регистрация</p>
@@ -48,5 +80,8 @@
             </a>
         </div>
     </footer>   
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
 </body>
 </html>
